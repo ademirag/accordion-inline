@@ -18,15 +18,15 @@ class AccInline{
   }
 
   function acc_inline_title_func( $atts, $content = null  ) {
-    return '<h3 class="accinlineTitle"><a href="#">'.$content.'</a></h3>';
+    return '<h3 class="accinline-title"><a href="#">'.$content.'</a></h3>';
   }
 
   function acc_inline_content_func( $atts, $content = null  ) {
-    return '<div class="accinlineContent" style="display:none">'.$content.'</a></div>';
+    return '<div class="accinline-content">'.$content.'</a></div>';
   }
 
   function acc_inline_func( $atts, $content = null  ) {
-    return '<div>'.do_shortcode($content).'</div>';
+    return '<div class="accinline-close">'.do_shortcode($content).'</div>';
   }
 
   function acc_line_script(){
