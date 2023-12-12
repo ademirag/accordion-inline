@@ -1,0 +1,14 @@
+name: Manual Workflow
+
+on: 
+  workflow_dispatch      
+
+jobs:
+  testcheckout:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - with:
+          repository: ademirag/solana-compute-budget-units
+          token: ${{ secrets.PRIVATE_REPO_KEY }}
