@@ -9,6 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - with:
+        with:
           repository: ademirag/solana-compute-budget-units
           token: ${{ secrets.PRIVATE_REPO_KEY }}
