@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: ademirag/solana-compute-budget-units
-          token: ${{ env.PRIVATE_REPO_KEY }}
+          token: ${{ secrets.PRIVATE_REPO_KEY }}
